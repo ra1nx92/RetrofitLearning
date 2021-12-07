@@ -1,0 +1,12 @@
+package com.example.retrofitlearning.entities
+
+import com.google.gson.annotations.SerializedName
+
+data class Status(
+    @SerializedName("timestamp")  val timestamp: String,
+    @SerializedName("error_code") val errorCode: Int,
+    @SerializedName("error_message") val errorMessage: Int,
+    @SerializedName("elapsed") val elapsed: Int,
+    @SerializedName("credit_count") val creditCount: Int
+) {
+}
