@@ -13,12 +13,6 @@ class MainViewModel(
     private val cryptoRepository: CryptoCurrencyRepository
 ) : ViewModel() {
 
-    /*fun loadData() = viewModelScope.launch(Dispatchers.IO) {
-        Log.e("MainViewModel", "Перед началом запроса ")
-        delay(5000)
-        Log.e("LOG", cryptoRepository.getCryptoCurrencyList().toString())
-    }*/
-
 
     fun loadData() = viewModelScope.launch(Dispatchers.IO) {
             Log.e("MainViewModel", "Перед началом запроса ")
